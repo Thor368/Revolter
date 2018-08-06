@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:Revolter-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:alexlib
+EESchema Schematic File Version 4
 LIBS:Revolter-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R-RESCUE-BLDC_4 R32
+L Revolter-rescue:R-RESCUE-BLDC_4 R32
 U 1 1 53FBB581
 P 4900 3200
 F 0 "R32" V 4850 3400 50  0000 C CNN
@@ -57,7 +26,7 @@ F 3 "" H 4900 3200 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R38
+L Revolter-rescue:R-RESCUE-BLDC_4 R38
 U 1 1 53FBB588
 P 5550 3750
 F 0 "R38" V 5500 3950 50  0000 C CNN
@@ -68,7 +37,7 @@ F 3 "" H 5550 3750 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R37
+L Revolter-rescue:R-RESCUE-BLDC_4 R37
 U 1 1 53FBB58F
 P 5550 3650
 F 0 "R37" V 5500 3850 50  0000 C CNN
@@ -79,7 +48,7 @@ F 3 "" H 5550 3650 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R36
+L Revolter-rescue:R-RESCUE-BLDC_4 R36
 U 1 1 53FBB596
 P 5550 3550
 F 0 "R36" V 5500 3750 50  0000 C CNN
@@ -90,7 +59,7 @@ F 3 "" H 5550 3550 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C-RESCUE-BLDC_4 C14
+L Revolter-rescue:C-RESCUE-BLDC_4 C14
 U 1 1 53FBB59D
 P 5950 4250
 F 0 "C14" H 6000 4350 50  0000 L CNN
@@ -101,7 +70,7 @@ F 3 "" H 5950 4250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-BLDC_4 C15
+L Revolter-rescue:C-RESCUE-BLDC_4 C15
 U 1 1 53FBB5A4
 P 6200 4250
 F 0 "C15" H 6250 4350 50  0000 L CNN
@@ -112,7 +81,7 @@ F 3 "" H 6200 4250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-BLDC_4 C16
+L Revolter-rescue:C-RESCUE-BLDC_4 C16
 U 1 1 53FBB5AB
 P 6450 4250
 F 0 "C16" H 6500 4350 50  0000 L CNN
@@ -123,7 +92,7 @@ F 3 "" H 6450 4250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR034
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR034
 U 1 1 53FBB5B2
 P 5950 4450
 F 0 "#PWR034" H 5950 4450 30  0001 C CNN
@@ -134,7 +103,7 @@ F 3 "" H 5950 4450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R33
+L Revolter-rescue:R-RESCUE-BLDC_4 R33
 U 1 1 53FBB5B8
 P 5000 3200
 F 0 "R33" V 4950 3400 50  0000 C CNN
@@ -145,7 +114,7 @@ F 3 "" H 5000 3200 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R34
+L Revolter-rescue:R-RESCUE-BLDC_4 R34
 U 1 1 53FBB5BF
 P 5100 3200
 F 0 "R34" V 5050 3400 50  0000 C CNN
@@ -156,7 +125,7 @@ F 3 "" H 5100 3200 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R35
+L Revolter-rescue:R-RESCUE-BLDC_4 R35
 U 1 1 53FBB5C6
 P 5200 3200
 F 0 "R35" V 5150 3400 50  0000 C CNN
@@ -167,7 +136,7 @@ F 3 "" H 5200 3200 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-RESCUE-BLDC_4 C13
+L Revolter-rescue:C-RESCUE-BLDC_4 C13
 U 1 1 53FBB5CD
 P 5100 4250
 F 0 "C13" H 5150 4350 50  0000 L CNN
@@ -178,7 +147,7 @@ F 3 "" H 5100 4250 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR035
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR035
 U 1 1 53FBB5D4
 P 5100 4450
 F 0 "#PWR035" H 5100 4450 30  0001 C CNN
@@ -227,7 +196,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3850 5100 4050
 $Comp
-L GND-RESCUE-BLDC_4 #PWR036
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR036
 U 1 1 53FBB5F9
 P 6200 4450
 F 0 "#PWR036" H 6200 4450 30  0001 C CNN
@@ -238,7 +207,7 @@ F 3 "" H 6200 4450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR037
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR037
 U 1 1 53FBB5FF
 P 6450 4450
 F 0 "#PWR037" H 6450 4450 30  0001 C CNN
@@ -280,7 +249,7 @@ Text HLabel 6600 3850 2    60   Output ~ 0
 TEMP_OUT
 Connection ~ 4900 2850
 $Comp
-L +3V3 #PWR038
+L power:+3V3 #PWR038
 U 1 1 5AA50814
 P 4900 2750
 F 0 "#PWR038" H 4900 2600 50  0001 C CNN

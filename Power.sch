@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:Revolter-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:alexlib
+EESchema Schematic File Version 4
 LIBS:Revolter-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R-RESCUE-BLDC_4 R53
+L Revolter-rescue:R-RESCUE-BLDC_4 R53
 U 1 1 504F8F6F
 P 9900 1150
 F 0 "R53" V 9800 1150 50  0000 C CNN
@@ -57,7 +26,7 @@ F 3 "" H 9900 1150 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R54
+L Revolter-rescue:R-RESCUE-BLDC_4 R54
 U 1 1 504F8F75
 P 9900 1250
 F 0 "R54" V 10000 1250 50  0000 C CNN
@@ -68,7 +37,7 @@ F 3 "" H 9900 1250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR076
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR076
 U 1 1 504F8F7B
 P 10400 1300
 F 0 "#PWR076" H 10400 1300 30  0001 C CNN
@@ -79,7 +48,7 @@ F 3 "" H 10400 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR077
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR077
 U 1 1 504F8F8D
 P 10400 2000
 F 0 "#PWR077" H 10400 2000 30  0001 C CNN
@@ -90,7 +59,7 @@ F 3 "" H 10400 2000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R56
+L Revolter-rescue:R-RESCUE-BLDC_4 R56
 U 1 1 504F8F93
 P 9900 1950
 F 0 "R56" V 10000 1950 50  0000 C CNN
@@ -101,7 +70,7 @@ F 3 "" H 9900 1950 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R55
+L Revolter-rescue:R-RESCUE-BLDC_4 R55
 U 1 1 504F8F99
 P 9900 1850
 F 0 "R55" V 9800 1850 50  0000 C CNN
@@ -112,7 +81,7 @@ F 3 "" H 9900 1850 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R57
+L Revolter-rescue:R-RESCUE-BLDC_4 R57
 U 1 1 504F8FA3
 P 9900 2550
 F 0 "R57" V 9800 2550 50  0000 C CNN
@@ -123,7 +92,7 @@ F 3 "" H 9900 2550 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R-RESCUE-BLDC_4 R58
+L Revolter-rescue:R-RESCUE-BLDC_4 R58
 U 1 1 504F8FA9
 P 9900 2650
 F 0 "R58" V 10000 2650 50  0000 C CNN
@@ -134,7 +103,7 @@ F 3 "" H 9900 2650 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR078
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR078
 U 1 1 504F8FAF
 P 10400 2700
 F 0 "#PWR078" H 10400 2700 30  0001 C CNN
@@ -159,7 +128,7 @@ H1_VS
 Text Notes 9000 3150 0    40   ~ 0
 MCU must sense the\nvoltage at each phase
 $Comp
-L IR2110S U3
+L Revolter-rescue:IR2110S U3
 U 1 1 574E05D2
 P 2350 1700
 F 0 "U3" H 2600 2200 60  0000 C CNN
@@ -178,7 +147,7 @@ M_L1
 Text HLabel 4150 2200 1    60   Input ~ 0
 H1_LOW
 $Comp
-L C_Small C37
+L Device:C_Small C37
 U 1 1 574E665D
 P 3100 1450
 F 0 "C37" H 3150 1600 50  0000 L CNN
@@ -189,7 +158,7 @@ F 3 "" H 3100 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D6
+L Device:D_Small D6
 U 1 1 574EBB78
 P 2800 1050
 F 0 "D6" H 2750 1130 50  0000 L CNN
@@ -200,7 +169,7 @@ F 3 "" V 2800 1050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR079
+L power:+12V #PWR079
 U 1 1 574ED597
 P 2500 900
 F 0 "#PWR079" H 2500 750 50  0001 C CNN
@@ -211,7 +180,7 @@ F 3 "" H 2500 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C34
+L Device:C_Small C34
 U 1 1 574EDD27
 P 1950 1050
 F 0 "C34" H 1960 1120 50  0000 L CNN
@@ -222,7 +191,7 @@ F 3 "" H 1950 1050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR080
+L power:GND #PWR080
 U 1 1 574EDDD7
 P 1850 1050
 F 0 "#PWR080" H 1850 800 50  0001 C CNN
@@ -233,7 +202,7 @@ F 3 "" H 1850 1050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR081
+L power:GND #PWR081
 U 1 1 574F0470
 P 2200 2300
 F 0 "#PWR081" H 2200 2050 50  0001 C CNN
@@ -250,7 +219,7 @@ H1
 Text HLabel 1750 1900 0    60   Input ~ 0
 L1
 $Comp
-L IR2110S U4
+L Revolter-rescue:IR2110S U4
 U 1 1 57504366
 P 2350 4000
 F 0 "U4" H 2600 4500 60  0000 C CNN
@@ -261,7 +230,7 @@ F 3 "" H 2350 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C38
+L Device:C_Small C38
 U 1 1 57504370
 P 3100 3750
 F 0 "C38" H 3150 3900 50  0000 L CNN
@@ -272,7 +241,7 @@ F 3 "" H 3100 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D7
+L Device:D_Small D7
 U 1 1 5750437C
 P 2800 3350
 F 0 "D7" H 2750 3430 50  0000 L CNN
@@ -283,7 +252,7 @@ F 3 "" V 2800 3350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR082
+L power:+12V #PWR082
 U 1 1 57504386
 P 2500 3200
 F 0 "#PWR082" H 2500 3050 50  0001 C CNN
@@ -294,7 +263,7 @@ F 3 "" H 2500 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C35
+L Device:C_Small C35
 U 1 1 57504396
 P 1950 3350
 F 0 "C35" H 1960 3420 50  0000 L CNN
@@ -305,7 +274,7 @@ F 3 "" H 1950 3350 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR083
+L power:GND #PWR083
 U 1 1 5750439C
 P 1850 3350
 F 0 "#PWR083" H 1850 3100 50  0001 C CNN
@@ -316,7 +285,7 @@ F 3 "" H 1850 3350 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR084
+L power:GND #PWR084
 U 1 1 575043A3
 P 2200 4600
 F 0 "#PWR084" H 2200 4350 50  0001 C CNN
@@ -333,7 +302,7 @@ H2
 Text HLabel 1750 4200 0    60   Input ~ 0
 L2
 $Comp
-L IR2110S U2
+L Revolter-rescue:IR2110S U2
 U 1 1 575045E6
 P 2300 6150
 F 0 "U2" H 2550 6650 60  0000 C CNN
@@ -352,7 +321,7 @@ M_L3
 Text HLabel 4100 6650 1    60   Input ~ 0
 H3_LOW
 $Comp
-L C_Small C36
+L Device:C_Small C36
 U 1 1 575045F0
 P 3050 5900
 F 0 "C36" H 3100 6050 50  0000 L CNN
@@ -363,7 +332,7 @@ F 3 "" H 3050 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Small D5
+L Device:D_Small D5
 U 1 1 575045FC
 P 2750 5500
 F 0 "D5" H 2700 5580 50  0000 L CNN
@@ -374,7 +343,7 @@ F 3 "" V 2750 5500 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR085
+L power:+12V #PWR085
 U 1 1 57504606
 P 2450 5350
 F 0 "#PWR085" H 2450 5200 50  0001 C CNN
@@ -385,7 +354,7 @@ F 3 "" H 2450 5350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C33
+L Device:C_Small C33
 U 1 1 57504616
 P 1900 5500
 F 0 "C33" H 1910 5570 50  0000 L CNN
@@ -396,7 +365,7 @@ F 3 "" H 1900 5500 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR086
+L power:GND #PWR086
 U 1 1 5750461C
 P 1800 5500
 F 0 "#PWR086" H 1800 5250 50  0001 C CNN
@@ -407,7 +376,7 @@ F 3 "" H 1800 5500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR087
+L power:GND #PWR087
 U 1 1 57504623
 P 2150 6750
 F 0 "#PWR087" H 2150 6500 50  0001 C CNN
@@ -432,7 +401,7 @@ M_L2
 Text HLabel 3350 3850 2    60   Input ~ 0
 H2_VS
 $Comp
-L +3V3 #PWR088
+L power:+3V3 #PWR088
 U 1 1 575461AA
 P 2200 900
 F 0 "#PWR088" H 2200 750 50  0001 C CNN
@@ -443,7 +412,7 @@ F 3 "" H 2200 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR089
+L power:+3V3 #PWR089
 U 1 1 575462A0
 P 2200 3200
 F 0 "#PWR089" H 2200 3050 50  0001 C CNN
@@ -454,7 +423,7 @@ F 3 "" H 2200 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR090
+L power:+3V3 #PWR090
 U 1 1 57546CC3
 P 2150 5350
 F 0 "#PWR090" H 2150 5200 50  0001 C CNN
@@ -477,7 +446,7 @@ H1_VL
 Text HLabel 3300 5350 2    60   Input ~ 0
 H3_VL
 $Comp
-L R R48
+L Device:R R48
 U 1 1 58975219
 P 4150 2550
 F 0 "R48" V 4230 2550 50  0000 C CNN
@@ -488,7 +457,7 @@ F 3 "" H 4150 2550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDPWR #PWR091
+L Revolter-rescue:GNDPWR #PWR091
 U 1 1 58976189
 P 4150 2800
 F 0 "#PWR091" H 4150 2600 50  0001 C CNN
@@ -499,7 +468,7 @@ F 3 "" H 4150 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR092
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR092
 U 1 1 5897662E
 P 5050 3000
 F 0 "#PWR092" H 5050 3000 30  0001 C CNN
@@ -510,7 +479,7 @@ F 3 "" H 5050 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR093
+L power:+3V3 #PWR093
 U 1 1 58977A83
 P 4450 1850
 F 0 "#PWR093" H 4450 1700 50  0001 C CNN
@@ -521,7 +490,7 @@ F 3 "" H 4450 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C44
+L Device:C C44
 U 1 1 58977E27
 P 4700 2000
 F 0 "C44" H 4725 2100 50  0000 L CNN
@@ -532,7 +501,7 @@ F 3 "" H 4700 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C41
+L Device:C C41
 U 1 1 58977E93
 P 4450 2000
 F 0 "C41" H 4475 2100 50  0000 L CNN
@@ -543,7 +512,7 @@ F 3 "" H 4450 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR094
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR094
 U 1 1 58978042
 P 4450 2150
 F 0 "#PWR094" H 4450 2150 30  0001 C CNN
@@ -554,7 +523,7 @@ F 3 "" H 4450 2150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR095
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR095
 U 1 1 589781C4
 P 4700 2150
 F 0 "#PWR095" H 4700 2150 30  0001 C CNN
@@ -565,7 +534,7 @@ F 3 "" H 4700 2150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R47
+L Device:R R47
 U 1 1 58979477
 P 4100 7000
 F 0 "R47" V 4180 7000 50  0000 C CNN
@@ -576,7 +545,7 @@ F 3 "" H 4100 7000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDPWR #PWR096
+L Revolter-rescue:GNDPWR #PWR096
 U 1 1 58979499
 P 4100 7250
 F 0 "#PWR096" H 4100 7050 50  0001 C CNN
@@ -587,7 +556,7 @@ F 3 "" H 4100 7200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR097
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR097
 U 1 1 589794A0
 P 5000 7450
 F 0 "#PWR097" H 5000 7450 30  0001 C CNN
@@ -598,7 +567,7 @@ F 3 "" H 5000 7450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR098
+L power:+3V3 #PWR098
 U 1 1 589794AC
 P 4400 6300
 F 0 "#PWR098" H 4400 6150 50  0001 C CNN
@@ -609,7 +578,7 @@ F 3 "" H 4400 6300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C43
+L Device:C C43
 U 1 1 589794B2
 P 4650 6450
 F 0 "C43" H 4675 6550 50  0000 L CNN
@@ -620,7 +589,7 @@ F 3 "" H 4650 6450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C39
+L Device:C C39
 U 1 1 589794B8
 P 4400 6450
 F 0 "C39" H 4425 6550 50  0000 L CNN
@@ -631,7 +600,7 @@ F 3 "" H 4400 6450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR099
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR099
 U 1 1 589794BE
 P 4400 6600
 F 0 "#PWR099" H 4400 6600 30  0001 C CNN
@@ -642,7 +611,7 @@ F 3 "" H 4400 6600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR0100
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR0100
 U 1 1 589794C4
 P 4650 6600
 F 0 "#PWR0100" H 4650 6600 30  0001 C CNN
@@ -657,7 +626,7 @@ BR_SO2
 Text HLabel 5550 7000 2    60   Output ~ 0
 BR_SO1
 $Comp
-L GNDPWR #PWR0101
+L Revolter-rescue:GNDPWR #PWR0101
 U 1 1 58985697
 P 4150 4700
 F 0 "#PWR0101" H 4150 4500 50  0001 C CNN
@@ -668,7 +637,7 @@ F 3 "" H 4150 4650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C60
+L Device:C_Small C60
 U 1 1 58A8870E
 P 3250 4450
 F 0 "C60" H 3300 4600 50  0000 L CNN
@@ -679,7 +648,7 @@ F 3 "" H 3250 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C59
+L Device:C_Small C59
 U 1 1 58A88C75
 P 3250 2150
 F 0 "C59" H 3300 2300 50  0000 L CNN
@@ -690,7 +659,7 @@ F 3 "" H 3250 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C61
+L Device:C_Small C61
 U 1 1 58A8987D
 P 3250 6600
 F 0 "C61" H 3300 6750 50  0000 L CNN
@@ -701,7 +670,7 @@ F 3 "" H 3250 6600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER-RESCUE-Revolter D10
+L Revolter-rescue:ZENER-RESCUE-Revolter D10
 U 1 1 599A646A
 P 9900 1550
 F 0 "D10" H 9900 1650 50  0000 C CNN
@@ -712,7 +681,7 @@ F 3 "" H 9900 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER-RESCUE-Revolter D11
+L Revolter-rescue:ZENER-RESCUE-Revolter D11
 U 1 1 599A6EDF
 P 9900 2250
 F 0 "D11" H 9900 2350 50  0000 C CNN
@@ -723,7 +692,7 @@ F 3 "" H 9900 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER-RESCUE-Revolter D12
+L Revolter-rescue:ZENER-RESCUE-Revolter D12
 U 1 1 599A735E
 P 9900 2950
 F 0 "D12" H 9900 3050 50  0000 C CNN
@@ -946,7 +915,7 @@ Wire Wire Line
 	10200 2950 10200 2650
 Connection ~ 10200 2650
 $Comp
-L INA181 IC4
+L Revolter-rescue:INA181 IC4
 U 1 1 59A0689C
 P 5050 2550
 F 0 "IC4" H 5250 2250 60  0000 C CNN
@@ -959,7 +928,7 @@ $EndComp
 Wire Wire Line
 	4450 1850 5050 1850
 $Comp
-L INA181 IC3
+L Revolter-rescue:INA181 IC3
 U 1 1 59A07801
 P 5000 7000
 F 0 "IC3" H 5200 6700 60  0000 C CNN
@@ -974,7 +943,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 2100 5750 2100
 $Comp
-L R R45
+L Device:R R45
 U 1 1 59A0CDA6
 P 5750 2250
 F 0 "R45" V 5830 2250 50  0000 C CNN
@@ -985,7 +954,7 @@ F 3 "" H 5750 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R46
+L Device:R R46
 U 1 1 59A0CE24
 P 5750 2850
 F 0 "R46" V 5830 2850 50  0000 C CNN
@@ -1003,7 +972,7 @@ Wire Wire Line
 	5550 2550 6150 2550
 Connection ~ 5750 2700
 $Comp
-L GND-RESCUE-BLDC_4 #PWR0102
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR0102
 U 1 1 59A0D35D
 P 5750 3000
 F 0 "#PWR0102" H 5750 3000 30  0001 C CNN
@@ -1014,7 +983,7 @@ F 3 "" H 5750 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C42
+L Device:C C42
 U 1 1 59A0DAE3
 P 6000 2850
 F 0 "C42" H 6025 2950 50  0000 L CNN
@@ -1025,7 +994,7 @@ F 3 "" H 6000 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR0103
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR0103
 U 1 1 59A0DC28
 P 6000 3000
 F 0 "#PWR0103" H 6000 3000 30  0001 C CNN
@@ -1041,7 +1010,7 @@ Connection ~ 6000 2700
 Text GLabel 5550 7150 2    60   Input ~ 0
 U/2
 $Comp
-L C C40
+L Device:C C40
 U 1 1 59A0E6D3
 P 5500 7300
 F 0 "C40" H 5525 7400 50  0000 L CNN
@@ -1052,7 +1021,7 @@ F 3 "" H 5500 7300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR0104
+L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR0104
 U 1 1 59A0ED1B
 P 5500 7450
 F 0 "#PWR0104" H 5500 7450 30  0001 C CNN
