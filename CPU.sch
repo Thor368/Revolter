@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title "HSWR CPU"
 Date "2017-02-05"
 Rev "2.0"
@@ -20,7 +20,7 @@ U 1 1 53F757A7
 P 5750 3900
 F 0 "U1" H 5700 6200 60  0000 C CNN
 F 1 "STM32F40X_LQFP64" H 5750 1550 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 5750 3900 60  0001 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5750 3900 60  0001 C CNN
 F 3 "" H 5750 3900 60  0001 C CNN
 	1    5750 3900
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 53F757AE
 P 7500 6350
 F 0 "C19" H 7550 6450 50  0000 L CNN
 F 1 "1u" H 7550 6250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7500 6350 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7500 6350 60  0001 C CNN
 F 3 "" H 7500 6350 60  0001 C CNN
 	1    7500 6350
 	0    -1   -1   0   
@@ -42,7 +42,7 @@ U 1 1 53F757B5
 P 7500 6100
 F 0 "C18" H 7550 6200 50  0000 L CNN
 F 1 "1u" H 7550 6000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7500 6100 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7500 6100 60  0001 C CNN
 F 3 "" H 7500 6100 60  0001 C CNN
 	1    7500 6100
 	0    -1   -1   0   
@@ -75,7 +75,7 @@ U 1 1 53F757DB
 P 7350 1800
 F 0 "C17" H 7400 1900 50  0000 L CNN
 F 1 "15p" H 7400 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7350 1800 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7350 1800 60  0001 C CNN
 F 3 "" H 7350 1800 60  0001 C CNN
 	1    7350 1800
 	-1   0    0    1   
@@ -86,7 +86,7 @@ U 1 1 53F757E2
 P 8100 1800
 F 0 "C22" H 8150 1900 50  0000 L CNN
 F 1 "15p" H 8150 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 8100 1800 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8100 1800 60  0001 C CNN
 F 3 "" H 8100 1800 60  0001 C CNN
 	1    8100 1800
 	-1   0    0    1   
@@ -123,7 +123,7 @@ U 1 1 53F757F8
 P 7750 5450
 F 0 "C20" H 7800 5550 50  0000 L CNN
 F 1 "1u" H 7800 5350 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7750 5450 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7750 5450 60  0001 C CNN
 F 3 "" H 7750 5450 60  0001 C CNN
 	1    7750 5450
 	-1   0    0    1   
@@ -135,7 +135,7 @@ NoConn ~ 7000 1750
 NoConn ~ 7000 1850
 NoConn ~ 4500 6050
 NoConn ~ 4500 5850
-NoConn ~ 4500 5350
+NoConn ~ 4500 5050
 NoConn ~ 4500 5450
 $Comp
 L Revolter-rescue:GND-RESCUE-BLDC_4 #PWR043
@@ -232,21 +232,19 @@ U 1 1 53F75896
 P 7950 3100
 F 0 "C21" H 8000 3200 50  0000 L CNN
 F 1 "10n" H 8000 3000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7950 3100 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7950 3100 60  0001 C CNN
 F 3 "" H 7950 3100 60  0001 C CNN
 	1    7950 3100
 	-1   0    0    1   
 $EndComp
 NoConn ~ 7000 3300
-NoConn ~ 4500 4650
-NoConn ~ 4500 4850
 $Comp
 L Revolter-rescue:CONN_6 P8
 U 1 1 53F77410
 P 10100 3150
 F 0 "P8" V 10050 3150 60  0000 C CNN
 F 1 "SWD" V 10150 3150 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 10100 3150 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10100 3150 60  0001 C CNN
 F 3 "" H 10100 3150 60  0001 C CNN
 	1    10100 3150
 	1    0    0    -1  
@@ -274,7 +272,7 @@ U 1 1 53F77426
 P 9400 1300
 F 0 "C23" H 9450 1400 50  0000 L CNN
 F 1 "1u" H 9450 1200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9400 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9400 1300 60  0001 C CNN
 F 3 "" H 9400 1300 60  0001 C CNN
 	1    9400 1300
 	-1   0    0    1   
@@ -285,7 +283,7 @@ U 1 1 53F7742D
 P 9650 1300
 F 0 "C24" H 9700 1400 50  0000 L CNN
 F 1 "1u" H 9700 1200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9650 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9650 1300 60  0001 C CNN
 F 3 "" H 9650 1300 60  0001 C CNN
 	1    9650 1300
 	-1   0    0    1   
@@ -307,7 +305,7 @@ U 1 1 53F77447
 P 9900 1300
 F 0 "C25" H 9950 1400 50  0000 L CNN
 F 1 "1u" H 9950 1200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9900 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9900 1300 60  0001 C CNN
 F 3 "" H 9900 1300 60  0001 C CNN
 	1    9900 1300
 	-1   0    0    1   
@@ -318,7 +316,7 @@ U 1 1 53F7744E
 P 10150 1300
 F 0 "C26" H 10200 1400 50  0000 L CNN
 F 1 "1u" H 10200 1200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 10150 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10150 1300 60  0001 C CNN
 F 3 "" H 10150 1300 60  0001 C CNN
 	1    10150 1300
 	-1   0    0    1   
@@ -356,56 +354,42 @@ Text HLabel 4500 2850 0    60   BiDi ~ 0
 USB_DM
 Text HLabel 4500 2950 0    60   BiDi ~ 0
 USB_DP
-Text HLabel 4500 3350 0    60   Output ~ 0
+Text HLabel 4500 3450 0    60   Output ~ 0
 SERVO
-Text HLabel 4500 3450 0    60   Input ~ 0
+Text HLabel 4500 5150 0    60   Input ~ 0
 HALL_1
-Text HLabel 4500 3550 0    60   Input ~ 0
+Text HLabel 4500 5250 0    60   Input ~ 0
 HALL_2
-Text HLabel 4500 5650 0    60   Input ~ 0
-HALL_3
 Text HLabel 4500 3850 0    60   Output ~ 0
-RX_SCL_MOSI
+TX_SCL_MOSI
 Text HLabel 4500 3950 0    60   3State ~ 0
-TX_SDA_NSS
-Text HLabel 4500 4550 0    60   Input ~ 0
+RX_SDA_NSS
+Text HLabel 4500 4950 0    60   Input ~ 0
 TEMP_MOTOR
-Text HLabel 4500 4150 0    60   Output ~ 0
+Text HLabel 4500 4350 0    60   Output ~ 0
 L3
 Text HLabel 4500 4250 0    60   Output ~ 0
 L2
-Text HLabel 4500 4350 0    60   Output ~ 0
+Text HLabel 4500 4150 0    60   Output ~ 0
 L1
 Text HLabel 4500 2250 0    60   Input ~ 0
 SCK_ADC_EXT
-Text HLabel 4500 5150 0    60   3State ~ 0
-TX_SDA_NSS
-Text HLabel 4500 5250 0    60   Output ~ 0
-RX_SCL_MOSI
-Text HLabel 4500 5750 0    60   Input ~ 0
-FAULT
 Text HLabel 4500 2550 0    60   Output ~ 0
-H3
+H1
 Text HLabel 4500 2650 0    60   Output ~ 0
 H2
 Text HLabel 4500 2750 0    60   Output ~ 0
-H1
-Text HLabel 4500 1750 0    60   Input ~ 0
-SENS3
-Text HLabel 4500 1850 0    60   Input ~ 0
-SENS2
+H3
 Text HLabel 4500 1950 0    60   Input ~ 0
-SENS1
-Text HLabel 4500 3250 0    60   Input ~ 0
-BR_SO1
-Text HLabel 4500 3150 0    60   Input ~ 0
-BR_SO2
-Text HLabel 4500 4750 0    60   Input ~ 0
+VOLTAGE_3
+Text HLabel 4500 1850 0    60   Input ~ 0
+VOLTAGE_2
+Text HLabel 4500 1750 0    60   Input ~ 0
+VOLTAGE_1
+Text HLabel 4500 4550 0    60   Input ~ 0
+CURRENT_1
+Text HLabel 4500 4850 0    60   Input ~ 0
 AN_IN
-Text HLabel 4500 5550 0    60   Output ~ 0
-EN_GATE
-Text HLabel 4500 4050 0    60   Input ~ 0
-DC_CAL
 Wire Notes Line
 	9250 2650 9250 3550
 Wire Notes Line
@@ -4268,18 +4252,18 @@ Text HLabel 4500 3650 0    60   Input ~ 0
 CAN_RX
 Text HLabel 4500 3750 0    60   Output ~ 0
 CAN_TX
-Text HLabel 4500 5050 0    60   Output ~ 0
+Text HLabel 4500 3250 0    60   Output ~ 0
 LED_RED
-Text HLabel 4500 4950 0    60   Output ~ 0
+Text HLabel 4500 3150 0    60   Output ~ 0
 LED_GREEN
 Text HLabel 4500 2350 0    60   Input ~ 0
 MISO_ADC_EXT2
 Text HLabel 4500 2450 0    60   Output ~ 0
-RX_SCL_MOSI
+TX_SCL_MOSI
 Text HLabel 4500 2050 0    60   Input ~ 0
 ADC_TEMP
 Text HLabel 4500 2150 0    60   3State ~ 0
-TX_SDA_NSS
+RX_SDA_NSS
 $Comp
 L power:+3V3 #PWR047
 U 1 1 57529FFB
@@ -4384,9 +4368,21 @@ U 1 1 5B683EEC
 P 7750 2050
 F 0 "Y1" H 7750 2318 50  0000 C CNN
 F 1 "Crystal" H 7750 2227 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 7750 2050 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 7750 2050 50  0001 C CNN
 F 3 "~" H 7750 2050 50  0001 C CNN
 	1    7750 2050
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4500 3350
+NoConn ~ 4500 3550
+NoConn ~ 4500 4050
+Text HLabel 4500 4650 0    60   Input ~ 0
+CURRENT_2
+Text HLabel 4500 4750 0    60   Input ~ 0
+CURRENT_3
+Text HLabel 4500 5350 0    60   Input ~ 0
+HALL_3
+NoConn ~ 4500 5550
+NoConn ~ 4500 5750
+NoConn ~ 4500 5650
 $EndSCHEMATC
