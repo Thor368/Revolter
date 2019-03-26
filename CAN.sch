@@ -23,7 +23,7 @@ CAN_TX
 Text HLabel 6150 3500 2    60   Output ~ 0
 CAN_RX
 $Comp
-L philips:PCA82C251 U5
+L Revolter-rescue:PCA82C251-philips U5
 U 1 1 59A31FD5
 P 5750 3200
 F 0 "U5" H 5550 3750 50  0000 L CNN

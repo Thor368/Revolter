@@ -8319,7 +8319,7 @@ Wire Wire Line
 	1850 5750 2250 5750
 Connection ~ 2250 5750
 $Comp
-L conn:Conn_01x08 J1
+L Revolter-rescue:Conn_01x08-conn J1
 U 1 1 5AA57034
 P 1100 5400
 F 0 "J1" H 1100 5800 50  0000 C CNN
@@ -8438,7 +8438,7 @@ $EndComp
 Wire Wire Line
 	1450 5950 1450 5100
 $Comp
-L conn:USB_A J2
+L Revolter-rescue:USB_A-conn J2
 U 1 1 5C9CAE08
 P 950 2950
 F 0 "J2" H 1005 3417 50  0000 C CNN
