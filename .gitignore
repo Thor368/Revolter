@@ -2,3 +2,5 @@
 /GERBER
 /*.kicad_pcb-bak
 rescue-backup
+*.sch-bak
+/fp-info-cache
