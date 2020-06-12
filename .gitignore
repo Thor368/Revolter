@@ -4,3 +4,4 @@
 rescue-backup
 *.sch-bak
 /fp-info-cache
+*.bck

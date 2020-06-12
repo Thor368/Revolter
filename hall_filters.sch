@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 6
 Title "HSWR HAL Filters"
 Date "2017-02-05"
 Rev "2.0"
@@ -231,19 +231,19 @@ Wire Wire Line
 	4800 3850 4900 3850
 Connection ~ 5100 3850
 Text HLabel 4800 3550 0    60   Input ~ 0
-HALL3_IN
+HALLU_IN
 Text HLabel 4800 3650 0    60   Input ~ 0
-HALL2_IN
+HALLV_IN
 Text HLabel 4800 3750 0    60   Input ~ 0
-HALL1_IN
+HALLW_IN
 Text HLabel 4800 3850 0    60   Input ~ 0
 TEMP_IN
 Text HLabel 6600 3550 2    60   Output ~ 0
-HALL3_OUT
+HALLU_OUT
 Text HLabel 6600 3650 2    60   Output ~ 0
-HALL2_OUT
+HALLV_OUT
 Text HLabel 6600 3750 2    60   Output ~ 0
-HALL1_OUT
+HALLW_OUT
 Text HLabel 6600 3850 2    60   Output ~ 0
 TEMP_OUT
 Connection ~ 4900 2850
