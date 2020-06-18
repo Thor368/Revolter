@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Revolter_100V)(type KiCad)(uri ${KIPRJMOD}/Revolter_100V.pretty)(options "")(descr ""))
+)

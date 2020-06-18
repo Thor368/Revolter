@@ -1,3 +1,33 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ACS730xLCTR-20AB
+D ±20A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 100mV/A, SOIC-8
+K hall effect current monitor sensor isolated
+F http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en
+$ENDCMP
+#
+$CMP ACS730xLCTR-40AB
+D ±40A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 50mV/A, SOIC-8
+K hall effect current monitor sensor isolated
+F http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en
+$ENDCMP
+#
+$CMP ACS730xLCTR-40AU
+D 40A Unidirectional Hall-Effect Current Sensor, +5.0V supply, 100mV/A, SOIC-8
+K hall effect current monitor sensor isolated
+F http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en
+$ENDCMP
+#
+$CMP ACS730xLCTR-50AB
+D ±50A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 40mV/A, SOIC-8
+K hall effect current monitor sensor isolated
+F http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en
+$ENDCMP
+#
+$CMP ACS730xLCTR-80AU
+D 80A Unidirectional Hall-Effect Current Sensor, +5.0V supply, 50mV/A, SOIC-8
+K hall effect current monitor sensor isolated
+F http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en
+$ENDCMP
+#
 #End Doc Library
