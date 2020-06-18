@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title "HSWR CPU"
 Date "2017-02-05"
 Rev "2.0"
@@ -156,7 +156,7 @@ LV
 Text HLabel 6400 4700 2    60   Output ~ 0
 LU
 Text HLabel 6400 2200 2    60   Input ~ 0
-SCK_ADC_EXT
+TEMP_2
 Text HLabel 6400 2500 2    60   Output ~ 0
 HU
 Text HLabel 6400 2600 2    60   Output ~ 0
@@ -172,7 +172,7 @@ VOLTAGE_U
 Text HLabel 5000 3400 0    60   Input ~ 0
 CURRENT_U
 Text HLabel 5000 3700 0    60   Input ~ 0
-AN_IN
+VOLTAGE_DC
 Wire Notes Line
 	9250 2650 9250 3550
 Wire Notes Line
@@ -4020,13 +4020,11 @@ LED_RED
 Text HLabel 6400 3400 2    60   Output ~ 0
 LED_GREEN
 Text HLabel 6400 2300 2    60   Input ~ 0
-MISO_ADC_EXT2
-Text HLabel 6400 2400 2    60   Output ~ 0
-TX_SCL_MOSI
+TEMP_3
 Text HLabel 6400 2000 2    60   Input ~ 0
-ADC_TEMP
-Text HLabel 6400 2100 2    60   3State ~ 0
-RX_SDA_NSS
+TEMP_MOSFET
+Text HLabel 6400 2100 2    60   Input ~ 0
+TEMP_1
 $Comp
 L power:+3V3 #PWR050
 U 1 1 5752A907
@@ -4063,17 +4061,6 @@ Text HLabel 5000 3600 0    60   Input ~ 0
 CURRENT_W
 Text HLabel 5000 4200 0    60   Input ~ 0
 HALL_W
-$Comp
-L MCU_ST_STM32F4:STM32F405RGTx U1
-U 1 1 5EE38B5C
-P 5700 3300
-F 0 "U1" H 5700 3300 50  0000 C CNN
-F 1 "STM32F405RGTx" H 6200 1550 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5100 1600 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5700 3300 50  0001 C CNN
-	1    5700 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5EE3F753
@@ -4221,7 +4208,6 @@ F 3 "" H 6300 1500 50  0001 C CNN
 	1    6300 1500
 	0    -1   -1   0   
 $EndComp
-Connection ~ 6000 1500
 Wire Wire Line
 	4750 2100 5000 2100
 $Comp
@@ -4350,13 +4336,10 @@ F 3 "" H 5000 1900 50  0001 C CNN
 	1    5000 1900
 	0    1    1    0   
 $EndComp
-NoConn ~ 6400 3700
 NoConn ~ 6400 3800
 NoConn ~ 6400 3900
 NoConn ~ 6400 4000
 NoConn ~ 6400 4100
-NoConn ~ 6400 4400
-NoConn ~ 6400 4500
 NoConn ~ 6400 4600
 NoConn ~ 5000 3900
 NoConn ~ 5000 4300
@@ -4408,4 +4391,23 @@ F 3 "" H 3900 2700 50  0001 C CNN
 	1    3900 2700
 	-1   0    0    1   
 $EndComp
+Connection ~ 6000 1500
+$Comp
+L MCU_ST_STM32F4:STM32F405RGTx U1
+U 1 1 5EE38B5C
+P 5700 3300
+F 0 "U1" H 5700 3300 50  0000 C CNN
+F 1 "STM32F405RGTx" H 6200 1550 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5100 1600 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 6400 3700 2    50   Output ~ 0
+PWM_PUMP
+NoConn ~ 6400 2400
+Text HLabel 6400 4400 2    50   Output ~ 0
+PWM_FAN1
+Text HLabel 6400 4500 2    50   Output ~ 0
+PWM_FAN2
 $EndSCHEMATC
