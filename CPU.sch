@@ -119,23 +119,8 @@ F 3 "" H 9900 1300 60  0001 C CNN
 	1    9900 1300
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:C C26
-U 1 1 53F7744E
-P 10100 1300
-AR Path="/53F7744E" Ref="C26"  Part="1" 
-AR Path="/5899E230/53F7744E" Ref="C26"  Part="1" 
-F 0 "C26" H 10150 1400 50  0000 L CNN
-F 1 "1u" H 10150 1200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10100 1300 60  0001 C CNN
-F 3 "" H 10100 1300 60  0001 C CNN
-	1    10100 1300
-	-1   0    0    1   
-$EndComp
-Connection ~ 9900 1450
 Connection ~ 9700 1450
 Connection ~ 9700 1150
-Connection ~ 9900 1150
 Wire Wire Line
 	9750 3100 9600 3100
 NoConn ~ 9750 3400
@@ -4048,13 +4033,9 @@ F 3 "" H 9700 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 1450 10100 1450
-Wire Wire Line
 	9500 1450 9700 1450
 Wire Wire Line
 	9500 1150 9700 1150
-Wire Wire Line
-	9900 1150 10100 1150
 Text HLabel 5000 3500 0    60   Input ~ 0
 CURRENT_V
 Text HLabel 5000 3600 0    60   Input ~ 0
