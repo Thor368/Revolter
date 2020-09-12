@@ -1796,4 +1796,16 @@ F 3 "" H 900 1600 50  0001 C CNN
 	1    900  1600
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 5F5CEC3F
+P 7550 4200
+F 0 "JP2" H 7550 4385 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7550 4294 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7550 4200 50  0001 C CNN
+F 3 "~" H 7550 4200 50  0001 C CNN
+	1    7550 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 4200
 $EndSCHEMATC
