@@ -102,7 +102,7 @@ F 3 "" H 5600 1450 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:CP C49
+L Device:C_Polarized C49
 U 1 1 589C2A67
 P 6800 1850
 F 0 "C49" H 6825 1950 50  0000 L CNN
@@ -551,23 +551,23 @@ F 3 "~" H 6200 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Jumper JP1
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5EF36517
-P 5100 1050
-F 0 "JP1" H 5100 1314 50  0000 C CNN
-F 1 "VCC" H 5100 1223 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5100 1050 50  0001 C CNN
-F 3 "~" H 5100 1050 50  0001 C CNN
-	1    5100 1050
+P 5050 1050
+F 0 "JP1" H 5050 1314 50  0000 C CNN
+F 1 "VCC" H 5050 1223 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5050 1050 50  0001 C CNN
+F 3 "~" H 5050 1050 50  0001 C CNN
+	1    5050 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 1050 4800 1050
+	3900 1050 4900 1050
 Connection ~ 3900 1050
 Wire Wire Line
 	3900 1050 3900 1450
 Wire Wire Line
-	5400 1050 7350 1050
+	5200 1050 7350 1050
 Connection ~ 7350 1050
 Wire Wire Line
 	7350 1050 7350 1000

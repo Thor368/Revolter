@@ -391,7 +391,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 3600 6150 3600
 $Comp
-L Device:Net-Tie_2 NT1
+L Device:NetTie_2 NT1
 U 1 1 5C9626AB
 P 8650 4800
 F 0 "NT1" H 8650 4978 50  0000 C CNN
