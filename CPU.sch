@@ -29,46 +29,20 @@ F 3 "" H 6150 1500 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C21
-U 1 1 53F75896
-P 4600 1700
-AR Path="/53F75896" Ref="C21"  Part="1" 
-AR Path="/5899E230/53F75896" Ref="C21"  Part="1" 
-F 0 "C21" V 4650 1750 50  0000 L CNN
-F 1 "10n" V 4550 1750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4600 1700 60  0001 C CNN
-F 3 "" H 4600 1700 60  0001 C CNN
-	1    4600 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 P8
-U 1 1 53F77410
-P 9950 3100
-F 0 "P8" V 10050 3100 60  0000 C CNN
-F 1 "SWD" H 9950 3450 60  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9950 3100 60  0001 C CNN
-F 3 "" H 9950 3100 60  0001 C CNN
-	1    9950 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR044
 U 1 1 53F7741D
-P 9600 3100
-F 0 "#PWR044" H 9600 3100 30  0001 C CNN
-F 1 "GND" H 9600 3030 30  0001 C CNN
-F 2 "" H 9600 3100 60  0001 C CNN
-F 3 "" H 9600 3100 60  0001 C CNN
-	1    9600 3100
+P 9750 3200
+F 0 "#PWR044" H 9750 3200 30  0001 C CNN
+F 1 "GND" H 9750 3130 30  0001 C CNN
+F 2 "" H 9750 3200 60  0001 C CNN
+F 3 "" H 9750 3200 60  0001 C CNN
+	1    9750 3200
 	0    1    1    0   
 $EndComp
 Text GLabel 9750 3000 0    60   Input ~ 0
 SWCLK
-Text GLabel 9750 3200 0    60   Input ~ 0
+Text GLabel 9750 3100 0    60   Input ~ 0
 SWDIO
-Text GLabel 9750 3300 0    60   Input ~ 0
-NRST
 $Comp
 L Device:C C23
 U 1 1 53F77426
@@ -121,9 +95,6 @@ F 3 "" H 9900 1300 60  0001 C CNN
 $EndComp
 Connection ~ 9700 1450
 Connection ~ 9700 1150
-Wire Wire Line
-	9750 3100 9600 3100
-NoConn ~ 9750 3400
 Text HLabel 6400 2800 2    60   BiDi ~ 0
 USB_DM
 Text HLabel 6400 2900 2    60   BiDi ~ 0
@@ -168,8 +139,6 @@ Wire Notes Line
 	10350 2650 9250 2650
 Text Notes 9250 3750 0    60   ~ 0
 Programming / Debug\nconnector
-Text GLabel 4900 1600 1    60   Input ~ 0
-NRST
 $Bitmap
 Pos 1750 6700
 Scale 1.000000
@@ -4011,17 +3980,6 @@ TEMP_MOSFET
 Text HLabel 6400 2100 2    60   Input ~ 0
 TEMP_1
 $Comp
-L power:+3V3 #PWR050
-U 1 1 5752A907
-P 9750 2900
-F 0 "#PWR050" H 9750 2750 50  0001 C CNN
-F 1 "+3V3" V 9750 3150 50  0000 C CNN
-F 2 "" H 9750 2900 50  0000 C CNN
-F 3 "" H 9750 2900 50  0000 C CNN
-	1    9750 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+3V3 #PWR051
 U 1 1 5752A9C6
 P 9700 1150
@@ -4218,24 +4176,6 @@ Wire Wire Line
 Text GLabel 6400 3100 2    60   Input ~ 0
 SWCLK
 $Comp
-L power:GND #PWR0113
-U 1 1 5EE5E816
-P 4450 1700
-F 0 "#PWR0113" H 4450 1450 50  0001 C CNN
-F 1 "GND" V 4455 1572 50  0000 R CNN
-F 2 "" H 4450 1700 50  0001 C CNN
-F 3 "" H 4450 1700 50  0001 C CNN
-	1    4450 1700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5000 1700 4900 1700
-Wire Wire Line
-	4900 1600 4900 1700
-Connection ~ 4900 1700
-Wire Wire Line
-	4900 1700 4750 1700
-$Comp
 L Device:C_Small C1
 U 1 1 5EE68BFE
 P 3750 3200
@@ -4391,4 +4331,18 @@ Text HLabel 6400 4400 2    50   Output ~ 0
 PWM_FAN1
 Text HLabel 6400 4500 2    50   Output ~ 0
 PWM_FAN2
+Connection ~ 9500 1150
+Connection ~ 9500 1450
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 5FAC96B0
+P 9950 3100
+F 0 "J4" H 9922 3124 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9922 3033 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 9950 3100 50  0001 C CNN
+F 3 "~" H 9950 3100 50  0001 C CNN
+	1    9950 3100
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 5000 1700
 $EndSCHEMATC
