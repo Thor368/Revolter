@@ -493,8 +493,6 @@ NoConn ~ 1250 2750
 Wire Wire Line
 	2750 4050 2750 4800
 Wire Wire Line
-	2750 4800 2950 4800
-Wire Wire Line
 	2950 4900 2650 4900
 Wire Wire Line
 	2650 4900 2650 4050
@@ -629,12 +627,11 @@ Wire Wire Line
 Wire Wire Line
 	2000 5500 2000 6750
 Wire Wire Line
-	1600 5200 1600 5000
+	1550 5200 1550 5000
 Wire Wire Line
-	850  5200 1600 5200
+	850  5200 1550 5200
 Wire Wire Line
-	850  5000 1500 5000
-Connection ~ 2750 4800
+	850  5000 1450 5000
 Wire Wire Line
 	850  5900 1200 5900
 Wire Wire Line
@@ -705,12 +702,10 @@ F 3 "" H 850 5800 50  0001 C CNN
 	1    850  5800
 	0    1    1    0   
 $EndComp
-Text Label 1200 4800 0    50   ~ 0
-TEMP1
 Text Label 1200 5000 0    50   ~ 0
 TEMP2
 Text Label 1200 5200 0    50   ~ 0
-TEMP3
+TEMP_M
 Text Label 1200 5900 0    50   ~ 0
 PUMP
 Text Label 1200 5700 0    50   ~ 0
@@ -720,9 +715,9 @@ FAN2
 Wire Wire Line
 	850  4800 2750 4800
 Wire Wire Line
-	1500 5000 1500 4900
+	1450 5000 1450 4900
 Wire Wire Line
-	1500 4900 2650 4900
+	1450 4900 2650 4900
 Connection ~ 2650 4900
 Wire Wire Line
 	1500 6250 2450 6250
@@ -798,10 +793,69 @@ F 3 "" H 2450 3650 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 5000 2550 5000
+	1550 5000 2550 5000
 Wire Wire Line
 	2550 4050 2550 5000
-Connection ~ 2550 5000
+$Comp
+L Device:D_Small D9
+U 1 1 5FCC59B8
+P 2000 5350
+F 0 "D9" V 1954 5420 50  0000 L CNN
+F 1 "D" V 2045 5420 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 2000 5350 50  0001 C CNN
+F 3 "~" V 2000 5350 50  0001 C CNN
+	1    2000 5350
+	0    1    1    0   
+$EndComp
+Connection ~ 2000 5500
+$Comp
+L Device:D_Small D6
+U 1 1 5FCC6889
+P 1600 5350
+F 0 "D6" V 1554 5420 50  0000 L CNN
+F 1 "D" V 1645 5420 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 1600 5350 50  0001 C CNN
+F 3 "~" V 1600 5350 50  0001 C CNN
+	1    1600 5350
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2550 5000 2950 5000
+	2000 5450 2000 5500
+$Comp
+L power:+12V #PWR0175
+U 1 1 5FCCBD88
+P 1600 5250
+F 0 "#PWR0175" H 1600 5100 50  0001 C CNN
+F 1 "+12V" V 1615 5378 50  0000 L CNN
+F 2 "" H 1600 5250 50  0001 C CNN
+F 3 "" H 1600 5250 50  0001 C CNN
+	1    1600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0192
+U 1 1 5FCCCC45
+P 2000 5250
+F 0 "#PWR0192" H 2000 5100 50  0001 C CNN
+F 1 "+12V" V 2015 5378 50  0000 L CNN
+F 2 "" H 2000 5250 50  0001 C CNN
+F 3 "" H 2000 5250 50  0001 C CNN
+	1    2000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5450 1600 5700
+Connection ~ 1600 5700
+Connection ~ 2750 4800
+Wire Wire Line
+	2750 4800 2950 4800
+Text Label 1200 4800 0    50   ~ 0
+TEMP1
+Wire Wire Line
+	2550 5000 2850 5000
+Wire Wire Line
+	2850 5000 2850 4200
+Wire Wire Line
+	2850 4200 2950 4200
+Connection ~ 2550 5000
 $EndSCHEMATC
