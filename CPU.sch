@@ -100,9 +100,9 @@ USB_DM
 Text HLabel 6400 2900 2    60   BiDi ~ 0
 USB_DP
 Text HLabel 5000 4000 0    60   Input ~ 0
-HALL_U
+HMI_TX
 Text HLabel 5000 4100 0    60   Input ~ 0
-HALL_V
+HMI_RX
 Text HLabel 5000 3800 0    60   Input ~ 0
 TEMP_MOTOR
 Text HLabel 6400 4900 2    60   Output ~ 0
@@ -3965,16 +3965,10 @@ BE 45 22 51 79 79 F9 07 B9 2C 02 81 40 20 10 08 04 02 E1 7F 8F EE DD BB C3 3F 48
 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text HLabel 6400 4200 2    60   Input ~ 0
-CAN_RX
-Text HLabel 6400 4300 2    60   Output ~ 0
-CAN_TX
 Text HLabel 6400 3500 2    60   Output ~ 0
 LED_RED
 Text HLabel 6400 3400 2    60   Output ~ 0
 LED_GREEN
-Text HLabel 6400 2300 2    60   Input ~ 0
-TEMP_3
 Text HLabel 6400 2000 2    60   Input ~ 0
 TEMP_MOSFET
 Text HLabel 6400 2100 2    60   Input ~ 0
@@ -3998,8 +3992,6 @@ Text HLabel 5000 3500 0    60   Input ~ 0
 CURRENT_V
 Text HLabel 5000 3600 0    60   Input ~ 0
 CURRENT_W
-Text HLabel 5000 4200 0    60   Input ~ 0
-HALL_W
 $Comp
 L power:GND #PWR0101
 U 1 1 5EE3F753
@@ -4333,16 +4325,19 @@ Text HLabel 6400 4500 2    50   Output ~ 0
 PWM_FAN2
 Connection ~ 9500 1150
 Connection ~ 9500 1450
+NoConn ~ 5000 1700
+NoConn ~ 6400 2300
+NoConn ~ 6400 4200
+NoConn ~ 6400 4300
 $Comp
-L Connector:Conn_01x03_Male J4
-U 1 1 5FAC96B0
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5FDFFCD8
 P 9950 3100
-F 0 "J4" H 9922 3124 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 9922 3033 50  0000 R CNN
+F 0 "J4" H 10030 3142 50  0000 L CNN
+F 1 "Conn_01x03" H 10030 3051 50  0000 L CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 9950 3100 50  0001 C CNN
 F 3 "~" H 9950 3100 50  0001 C CNN
 	1    9950 3100
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
-NoConn ~ 5000 1700
 $EndSCHEMATC
