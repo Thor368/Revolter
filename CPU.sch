@@ -112,7 +112,7 @@ LV
 Text HLabel 6400 4700 2    60   Output ~ 0
 LU
 Text HLabel 6400 2200 2    60   Input ~ 0
-TEMP_2
+TEMP_COND
 Text HLabel 6400 2500 2    60   Output ~ 0
 HU
 Text HLabel 6400 2600 2    60   Output ~ 0
@@ -3972,7 +3972,7 @@ LED_GREEN
 Text HLabel 6400 2000 2    60   Input ~ 0
 TEMP_MOSFET
 Text HLabel 6400 2100 2    60   Input ~ 0
-TEMP_1
+TEMP_TANK
 $Comp
 L power:+3V3 #PWR051
 U 1 1 5752A9C6
@@ -4251,8 +4251,6 @@ F 3 "" H 5000 1900 50  0001 C CNN
 $EndComp
 NoConn ~ 6400 3800
 NoConn ~ 6400 3900
-NoConn ~ 6400 4000
-NoConn ~ 6400 4100
 NoConn ~ 6400 4600
 NoConn ~ 5000 3900
 NoConn ~ 5000 4300
@@ -4316,13 +4314,11 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5700 3300
 	1    0    0    -1  
 $EndComp
-Text HLabel 6400 3700 2    50   Output ~ 0
+Text HLabel 6400 4000 2    50   Output ~ 0
 PWM_PUMP
 NoConn ~ 6400 2400
-Text HLabel 6400 4400 2    50   Output ~ 0
-PWM_FAN1
-Text HLabel 6400 4500 2    50   Output ~ 0
-PWM_FAN2
+Text HLabel 6400 4100 2    50   Output ~ 0
+PWM_FAN
 Connection ~ 9500 1150
 Connection ~ 9500 1450
 NoConn ~ 5000 1700
@@ -4334,10 +4330,13 @@ L Connector_Generic:Conn_01x03 J4
 U 1 1 5FDFFCD8
 P 9950 3100
 F 0 "J4" H 10030 3142 50  0000 L CNN
-F 1 "Conn_01x03" H 10030 3051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 9950 3100 50  0001 C CNN
+F 1 "SWD" H 10030 3051 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 9950 3100 50  0001 C CNN
 F 3 "~" H 9950 3100 50  0001 C CNN
 	1    9950 3100
 	1    0    0    -1  
 $EndComp
+NoConn ~ 6400 4500
+NoConn ~ 6400 4400
+NoConn ~ 6400 3700
 $EndSCHEMATC
