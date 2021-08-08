@@ -843,5 +843,4 @@ Wire Wire Line
 Connection ~ 2100 6100
 Wire Wire Line
 	2100 6100 1000 6100
-Connection ~ 2150 4300
 $EndSCHEMATC
