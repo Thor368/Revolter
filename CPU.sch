@@ -103,8 +103,6 @@ Text HLabel 5000 4000 0    60   Input ~ 0
 HMI_TX
 Text HLabel 5000 4100 0    60   Input ~ 0
 HMI_RX
-Text HLabel 5000 3800 0    60   Input ~ 0
-TEMP_MOTOR
 Text HLabel 6400 4900 2    60   Output ~ 0
 LW
 Text HLabel 6400 4800 2    60   Output ~ 0
@@ -112,7 +110,7 @@ LV
 Text HLabel 6400 4700 2    60   Output ~ 0
 LU
 Text HLabel 6400 2200 2    60   Input ~ 0
-TEMP_COND
+TEMP_RET
 Text HLabel 6400 2500 2    60   Output ~ 0
 HU
 Text HLabel 6400 2600 2    60   Output ~ 0
@@ -4004,19 +4002,6 @@ F 3 "" H 5600 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C18
-U 1 1 53F757B5
-P 4600 2100
-AR Path="/53F757B5" Ref="C18"  Part="1" 
-AR Path="/5899E230/53F757B5" Ref="C18"  Part="1" 
-F 0 "C18" H 4650 2200 50  0000 L CNN
-F 1 "1u" H 4650 2000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4600 2100 60  0001 C CNN
-F 3 "" H 4600 2100 60  0001 C CNN
-	1    4600 2100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C19
 U 1 1 53F757AE
 P 4850 2200
@@ -4238,17 +4223,6 @@ Wire Wire Line
 	9300 1150 9500 1150
 NoConn ~ 6400 3200
 NoConn ~ 6400 3600
-$Comp
-L power:GND #PWR0116
-U 1 1 5EE78F0F
-P 5000 1900
-F 0 "#PWR0116" H 5000 1650 50  0001 C CNN
-F 1 "GND" V 5005 1772 50  0000 R CNN
-F 2 "" H 5000 1900 50  0001 C CNN
-F 3 "" H 5000 1900 50  0001 C CNN
-	1    5000 1900
-	0    1    1    0   
-$EndComp
 NoConn ~ 6400 3800
 NoConn ~ 6400 3900
 NoConn ~ 6400 4600
@@ -4339,4 +4313,66 @@ $EndComp
 NoConn ~ 6400 4500
 NoConn ~ 6400 4400
 NoConn ~ 6400 3700
+$Comp
+L Device:C C18
+U 1 1 53F757B5
+P 4600 2100
+AR Path="/53F757B5" Ref="C18"  Part="1" 
+AR Path="/5899E230/53F757B5" Ref="C18"  Part="1" 
+F 0 "C18" H 4650 2200 50  0000 L CNN
+F 1 "1u" H 4650 2000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4600 2100 60  0001 C CNN
+F 3 "" H 4600 2100 60  0001 C CNN
+	1    4600 2100
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5EE78F0F
+P 4450 1900
+F 0 "#PWR0116" H 4450 1650 50  0001 C CNN
+F 1 "GND" V 4455 1772 50  0000 R CNN
+F 2 "" H 4450 1900 50  0001 C CNN
+F 3 "" H 4450 1900 50  0001 C CNN
+	1    4450 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 6168EF04
+P 4600 1900
+F 0 "R20" V 4500 2050 50  0000 C CNN
+F 1 "10k" V 4600 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4530 1900 50  0001 C CNN
+F 3 "~" H 4600 1900 50  0001 C CNN
+	1    4600 1900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4750 1900 4850 1900
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 6168FCAC
+P 4850 1700
+F 0 "JP2" V 4896 1612 50  0000 R CNN
+F 1 "BOOT" V 4800 1600 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4850 1700 50  0001 C CNN
+F 3 "~" H 4850 1700 50  0001 C CNN
+	1    4850 1700
+	0    1    -1   0   
+$EndComp
+Connection ~ 4850 1900
+Wire Wire Line
+	4850 1900 5000 1900
+$Comp
+L power:+3V3 #PWR0179
+U 1 1 61690991
+P 4850 1500
+F 0 "#PWR0179" H 4850 1350 50  0001 C CNN
+F 1 "+3V3" H 4865 1673 50  0000 C CNN
+F 2 "" H 4850 1500 50  0001 C CNN
+F 3 "" H 4850 1500 50  0001 C CNN
+	1    4850 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
