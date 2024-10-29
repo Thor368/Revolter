@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name Revolterlib)(type Legacy)(uri ${KIPRJMOD}/Revolterlib.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Revolterlib")(type "Legacy")(uri "${KIPRJMOD}/Revolterlib.lib")(options "")(descr ""))
+  (lib (name "Revolter-rescue")(type "KiCad")(uri "${KIPRJMOD}/Revolter-rescue.kicad_sym")(options "")(descr ""))
 )
